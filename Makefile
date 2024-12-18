@@ -60,10 +60,10 @@ deb_client:
 	@mkdir -p MySyslog_client_${version}-${revision}_${architecture}/DEBIAN
 	@touch MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 
-	@echo "Package: mysyslog-client"                            >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
+	@echo "Package: mysyslog-client"                           >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Version: $(version)"                                >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Architecture: $(architecture)"                      >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
-	@echo "Maintainer: Nik <git.gandc.ru/gandc>"             >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
+	@echo "Maintainer: Nik"             			   >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Description: Client for libmysyslog logging system" >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 
 	@mkdir -p MySyslog_client_${version}-${revision}_${architecture}/usr/local/bin
@@ -77,7 +77,7 @@ deb_daemon:
 	@echo "Package: mysyslog-daemon"                           >> MySyslog_daemon_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Version: $(version)"                                >> MySyslog_daemon_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Architecture: $(architecture)"                      >> MySyslog_daemon_${version}-${revision}_${architecture}/DEBIAN/control
-	@echo "Maintainer: gandc <git.gandc.ru/gandc>"             >> MySyslog_daemon_${version}-${revision}_${architecture}/DEBIAN/control
+	@echo "Maintainer: Nik"             			   >> MySyslog_daemon_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Description: Daemon for libmysyslog logging system" >> MySyslog_daemon_${version}-${revision}_${architecture}/DEBIAN/control
 
 	@mkdir -p MySyslog_daemon_${version}-${revision}_${architecture}/usr/local/bin
@@ -91,7 +91,7 @@ deb_lib:
 	@echo "Package: libmysyslog"                              >> MySyslog_library_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Version: $(version)"                               >> MySyslog_library_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Architecture: $(architecture)"                     >> MySyslog_library_${version}-${revision}_${architecture}/DEBIAN/control
-	@echo "Maintainer: gandc <git.gandc.ru/gandc>"            >> MySyslog_library_${version}-${revision}_${architecture}/DEBIAN/control
+	@echo "Maintainer: Nik"            			  >> MySyslog_library_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Description: Core library for mysyslog logging"    >> MySyslog_library_${version}-${revision}_${architecture}/DEBIAN/control
 
 	@mkdir -p MySyslog_library_${version}-${revision}_${architecture}/usr/local/lib

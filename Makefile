@@ -63,7 +63,7 @@ deb_client:
 	@echo "Package: mysyslog-client"                            >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Version: $(version)"                                >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Architecture: $(architecture)"                      >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
-	@echo "Maintainer: gandc <git.gandc.ru/gandc>"             >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
+	@echo "Maintainer: Nik <git.gandc.ru/gandc>"             >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 	@echo "Description: Client for libmysyslog logging system" >> MySyslog_client_${version}-${revision}_${architecture}/DEBIAN/control
 
 	@mkdir -p MySyslog_client_${version}-${revision}_${architecture}/usr/local/bin
